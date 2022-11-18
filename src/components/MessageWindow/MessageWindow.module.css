@@ -1,0 +1,19 @@
+.dialogs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dialogsItems {
+  width: 20%;
+  margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+}
+
+.dialogWindow {
+  margin-left: 20px;
+  border-left: 5px dashed rgb(115, 188, 191);
+  width: 70%;
+}

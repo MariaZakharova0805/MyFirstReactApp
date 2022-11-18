@@ -1,0 +1,48 @@
+.ProfileInfo {
+  width: 100%;
+}
+
+.topImg img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  width: 80%;
+}
+
+.profileImage img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+/* Адаптивность */
+
+@media (max-width: 600px) {
+  .app-wrapper {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto auto auto auto;
+  }
+  .ProfileInfo {
+    font-size: 18px;
+    margin: 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profileImage img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin: 0px;
+  }
+}

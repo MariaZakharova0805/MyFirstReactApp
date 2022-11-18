@@ -1,0 +1,51 @@
+.newPost,
+.sendButton,
+.circle {
+  background: linear-gradient(
+    315deg,
+    rgb(152, 207, 195),
+    rgb(86, 181, 184) 100%
+  );
+  width: 100%;
+}
+
+.posts {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.newPost {
+  border: 1px solid black;
+  resize: none;
+  font-size: 20px;
+  width: 80%;
+}
+.sendButton {
+  border: 1px solid black;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+}
+.sendButton:hover {
+  background: linear-gradient(315deg, rgb(40, 137, 114), rgb(12, 34, 35) 100%);
+  cursor: pointer;
+  color: white;
+}
+.AllPosts {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Адаптивность */
+
+@media (max-width: 600px) {
+  .posts {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .newPost {
+    width: 80%;
+    margin: 0px;
+  }
+}

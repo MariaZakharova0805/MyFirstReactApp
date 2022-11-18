@@ -1,0 +1,37 @@
+.caption {
+  text-align: center;
+}
+
+.messages img {
+  width: 60px;
+  height: 60px;
+}
+.messages {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.block {
+  margin-left: 50px;
+  padding: 5px 10px;
+  height: fit-content;
+  width: fit-content;
+  background: rgb(86, 181, 184);
+  line-height: 15px;
+  border-radius: 5px;
+}
+
+.block::before {
+  /* если пропустить content
+     то объект не будет добавлен в верстку
+     и мы не увидим стрелку
+  */
+  content: "";
+  border: 20px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 20px;
+  border-right-color: rgb(86, 181, 184);
+  position: absolute;
+  margin: -5px 0 0 -45px;
+}

@@ -1,18 +1,35 @@
 import React from "react";
 import "./App.css";
-import ProfilePage from "./components/ProfilePage";
-import Header from "./components/Header";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import Profile from "./components/Profile/Profile";
+import MessageWindow from "./components/MessageWindow/MessageWindow";
+import News from "./components/News/News";
+import Settings from "./components/Settings/Settings";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
+
   return (
-    <div className="app-wrapper">
-      <Header />
-      <NavBar />
-      <ProfilePage/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <NavBar />
+        <div className="app-wrapper-content">
+          <Routes>
+            <Route path="/profile" element={<Profile postsData={props.appState.profilePage}/>} />
+
+{/* //Опрокидываем пропсы dialogsData и messagesData на уровень ниже */}
+            <Route path="/messages/*" element={<MessageWindow messagesPage={props.appState.messagesPage} />} />
+
+            <Route path="/news" element={<News />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 

@@ -1,0 +1,24 @@
+.header {
+  background: linear-gradient(
+    315deg,
+    rgb(152, 207, 195),
+    rgb(86, 181, 184) 100%
+  );
+  width: 100%;
+  grid-area: header;
+  margin-bottom: 3px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px auto 0px auto;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 200px;
+    margin: 10px auto 0px auto;
+  }
+}

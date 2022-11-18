@@ -8,148 +8,22 @@
   margin-left: 10%;
   margin-right: 10%;
 }
-
-.header,
-.footer,
-.navItem,
-textarea,
-.send,
-.circle {
-  background: linear-gradient(
-    315deg,
-    rgb(152, 207, 195),
-    rgb(86, 181, 184) 100%
-  );
-  width: 100%;
-}
-
-/* header */
-.header {
-  grid-area: header;
-  margin-bottom: 3px;
-}
-.logo {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: 10px auto 0px auto;
-}
-
-/* footer */
-.footer {
-  grid-area: footer;
-}
-.CopyRight {
-  height: 30px;
-  float: right;
-  margin-right: 20px;
-  color: white;
-}
-
-/* Navigation bar */
-.nav {
-  grid-area: nav;
-  max-width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.nav img {
-  width: 50px;
-  height: 50px;
-}
-.navItem {
-  width: 100px;
-  margin: 10px;
-  margin-left: 50px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: aliceblue;
-}
-.navItem:hover {
-  cursor: pointer;
-  margin-left: 60px;
-  z-index: 2;
-}
-
-/* Profili Info */
-.content {
-  grid-area: content;
-  min-width: 300px;
-  word-wrap: break-word;
-}
-.TopImg img {
-  width: 100%;
-  height: auto;
-}
-.MainInfo {
-  width: 80%;
-}
-
-.ProfileImg img {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-}
-.ProfileInfo {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-}
-.posts {
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-}
-textarea {
-  border: 1px solid black;
-  resize: none;
-  font-size: 20px;
-  width: 80%;
-}
-.send {
-  border: 1px solid black;
-  width: 80px;
-  height: 30px;
-  margin-top: 10px;
-}
-.send:hover {
-  background: linear-gradient(315deg, rgb(40, 137, 114), rgb(12, 34, 35) 100%);
-  cursor: pointer;
-  color: white;
-}
-.circle {
-  width: 20px;
-  height: 20px;
-
-  border-radius: 50%;
-  margin-top: 10px;
-}
-.post {
-  display: flex;
-  flex-direction: row;
-}
-
-.post p {
-  margin: 10px;
-  padding: 0px;
-}
-
-@media screen and (max-width: 572px) {
+@media (max-width: 600px) {
   .app-wrapper {
-    grid-template-columns: 70px 1fr 1fr;
-    align-items: stretch;
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto auto auto auto;
   }
-  .navItem {
-    width: 40px;
-    font-size: 10px;
-    margin-left: 10px;
-    text-align: center;
-  }
+}
+.app-wrapper-content {
+  grid-area: content;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
 }

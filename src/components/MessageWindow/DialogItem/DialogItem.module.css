@@ -1,0 +1,13 @@
+.chosen {
+    line-height: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(50, 95, 97);
+  }
+
+  .item {
+    line-height: 30px;
+    color: black;
+  }
+  
