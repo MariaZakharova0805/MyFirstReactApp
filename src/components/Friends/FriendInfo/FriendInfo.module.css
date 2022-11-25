@@ -1,0 +1,26 @@
+.friends {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.friend {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.friend:hover {
+  cursor: pointer;
+  margin: 2px;
+  border: 3px dashed rgb(15, 136, 136);
+}
+
+.friend img {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}

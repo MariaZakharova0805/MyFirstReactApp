@@ -6,8 +6,6 @@ import { NavLink } from "react-router-dom";
 //переключение ссылок контактов
 const setActive = ({ isActive }) => (isActive ? m.chosen : m.item);
 
-
-
 const DialogItem = (propsDial) => {
   let path = "/messages/" + propsDial.id;
   return (

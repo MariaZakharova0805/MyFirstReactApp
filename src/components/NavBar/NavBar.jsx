@@ -29,7 +29,9 @@ const NavBar = () => {
       <NavLink to="/settings" className={setActive}>
         Настройки
       </NavLink>
-      
+      <NavLink to="/friends" className={setActive}>
+        Друзья
+      </NavLink>
     </nav>
   );
 };

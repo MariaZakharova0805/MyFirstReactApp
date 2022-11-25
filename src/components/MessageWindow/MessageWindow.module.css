@@ -17,3 +17,37 @@
   border-left: 5px dashed rgb(115, 188, 191);
   width: 70%;
 }
+
+.messageArea,
+.sendButton {
+  background: linear-gradient(
+    315deg,
+    rgb(152, 207, 195),
+    rgb(86, 181, 184) 100%
+  );
+  width: 100%;
+}
+.newMessage {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageArea {
+  border: 1px solid black;
+  resize: none;
+  font-size: 20px;
+  width: 80%;
+}
+
+.sendButton {
+  border: 1px solid black;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+}
+.sendButton:hover {
+  background: linear-gradient(315deg, rgb(40, 137, 114), rgb(12, 34, 35) 100%);
+  cursor: pointer;
+  color: white;
+}
